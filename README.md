@@ -1,7 +1,3 @@
-# node-js-sample
-
-This is a barebones Node.js app using the [Express](http://expressjs.com/) framework.
-
 ## Running Locally
 
 Asumming you have [Node.js](http://nodejs.org/) and [Heroku Toolbelt](https://toolbelt.heroku.com/) installed on your machine:
