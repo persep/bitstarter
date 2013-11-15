@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Bitstarter</title>
+
+    <!-- Bootstrap -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+      /* Remove to make responsive
+      .container {
+        width: 960px;
+      }
+      */
+      .row {
+        border: 1px solid;
+      }
+
+      .row + .row {
+        border-top:0;
+      }   
+
+      p.lead {
+        padding-top: 15px;
+      }
+
+      .navigation, .pitch, .section1, .section2, .faq, .footer {
+        padding: 10px 0px 10px 0px;
+      }
+
+      .video, .thermometer, .order, .social {
+        border: 1px dotted;
+        text-align: center;
+      }
+      .video {
+        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
+        height: 120px;
+        line-height: 120px;
+      }
+      .thermometer, .order, .social {
+        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
+        height: 40px;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row navigation">
+        <div class="col-md-2 logo">Logo</div>
+        <div class="col-md-6 blank">Blank</div>
+        <div class="col-md-4 about">About</div>
+      </div>
+      <div class="row heading">
+        <div class="col-md-12">
+          <h1>Bitstarter Title</h1>
+        </div>
+      </div>
+      <div class="row subheading">
+        <div class="col-md-12">
+          <p class="lead">This is my first bitstarter project</p>
+        </div>
+      </div>
+      <div class="row pitch">
+        <div class="col-md-6">
+          <div class="video">Video</div>
+        </div>
+        <div class="col-md-6">
+          <div class="thermometer">Thermometer</div>
+          <div class="order">Order</div>
+          <div class="social">Social</div>
+        </div>
+      </div>
+      <div class="row section1">
+        <div class="col-md-12">Marketing Section 1</div>
+      </div>
+      <div class="row section2">
+        <div class="col-md-12">Marketing Section 2</div>
+      </div>
+      <div class="row faq">
+        <div class="col-md-12">FAQ</div>
+      </div>
+      <div class="row footer">
+        <div class="col-md-12">Footer</div>
+      </div>
+    </div>
+  </body>
+</html>
+
