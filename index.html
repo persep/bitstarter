@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- To ensure proper rendering and touch zooming -->
     <title>My First Bitstarter</title>
 
     <!-- Bootstrap -->
-    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -48,15 +48,20 @@
       }
       /*
       .video {
-        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
+        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html 
         height: 120px;
         line-height: 120px;
-      }
-      */
+      }*/
+      
       .thermometer, .order, .social {
-        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
+        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html 
         height: 40px;
-        line-height: 40px;
+        line-height: 40px;*/
+      }
+
+      .bitstarter-template {
+        padding: 40px 5px;
+        text-align: center;
       }
     </style>
   </head>
@@ -93,50 +98,52 @@
         <div class="col-md-4 about">About</div>
       </div>
       -->
-      <div class="row heading">
-        <div class="col-md-12">
-          <h1>Product</h1>
+      <div class="bitstarter-template">
+        <div class="row heading">
+          <div class="col-md-12">
+            <h1>Product</h1>
+          </div>
         </div>
-      </div>
-      <div class="row subheading">
-        <div class="col-md-12">
-          <p class="lead">One sentence description.</p>
+        <div class="row subheading">
+          <div class="col-md-12">
+            <p class="lead">One sentence description.</p>
+          </div>
         </div>
-      </div>
-      <div class="row pitch">
-        <div class="col-md-6">
-          <div class="video"><img src="http://placehold.it/480x300" alt="Video"></div>
+        <div class="row pitch">
+          <div class="col-md-6">
+            <div class="video"><img src="http://placehold.it/480x300" class="img-responsive" alt="Video"></div>
+          </div>
+          <div class="col-md-6">
+            <div class="thermometer">Thermometer</div>
+            <div class="order">Order</div>
+            <div class="social">Social</div>
+          </div>
         </div>
-        <div class="col-md-6">
-          <div class="thermometer">Thermometer</div>
-          <div class="order">Order</div>
-          <div class="social">Social</div>
+        <div class="row section1">
+          <div class="col-md-6"><img src="http://placehold.it/480x300" class="img-responsive" alt="Image"></div>
+          <div class="col-md-6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="row section1">
-        <div class="col-md-6"><img src="http://placehold.it/480x300" alt="Image"></div>
-        <div class="col-md-6">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
+        <div class="row section2">
+          <div class="col-md-6">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.
+            </p>
+          </div>
+          <div class="col-md-6"><img src="http://placehold.it/480x300" class="img-responsive" alt="Image"></div>
         </div>
-      </div>
-      <div class="row section2">
-        <div class="col-md-6">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
+        <div class="row faq">
+          <div class="col-md-12">FAQ</div>
         </div>
-        <div class="col-md-6"><img src="http://placehold.it/480x300" alt="Image"></div>
-      </div>
-      <div class="row faq">
-        <div class="col-md-12">FAQ</div>
-      </div>
-      <div class="row footer">
-        <div class="col-md-12">
-          <p>
-            This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a> , without all the cruft that would otherwise be put at the bottom of the page.
-          </p>
+        <div class="row footer">
+          <div class="col-md-12">
+            <p>
+              This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a> , without all the cruft that would otherwise be put at the bottom of the page.
+            </p>
+          </div>
         </div>
       </div>
     </div>
