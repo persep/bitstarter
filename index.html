@@ -6,7 +6,7 @@
     <title>My First Bitstarter</title>
 
     <!-- Bootstrap -->
-    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet" media="screen">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,6 +25,7 @@
         width: 960px;
       }
       */
+      /*
       .row {
         border: 1px solid;
       }
@@ -32,7 +33,7 @@
       .row + .row {
         border-top:0;
       }   
-
+      */
       p.lead {
         padding-top: 15px;
       }
@@ -45,11 +46,13 @@
         border: 1px dotted;
         text-align: center;
       }
+      /*
       .video {
         /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
         height: 120px;
         line-height: 120px;
       }
+      */
       .thermometer, .order, .social {
         /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
         height: 40px;
@@ -58,25 +61,51 @@
     </style>
   </head>
   <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- The whole nav bar -->
+      <div class="container">
+        <div class="navbar-header"> <!-- in responsive mode you can only see navbar-brand and button -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <!-- responsive navbar menu button, float right-->
+            <span class="sr-only">Toggle navigation</span> <!-- hide information used for screen readers -->
+            <span class="icon-bar"></span>  <!-- 3 horizontal button -->
+            <span class="icon-bar"></span>  
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bitstarter</a> <!-- Title of the navbar -->
+        </div>
+        <div class="collapse navbar-collapse"> <!-- Menu items in normal or brand and button in responsive -->
+          <ul class="nav navbar-nav"> <!-- navbar menu item, in responsive opens when clicking menu button -->
+            <li class="active"><a href="#">Home</a></li> <!-- selected menu -->
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!-- /.container -->
+    </div><!-- /.navbar -->
+
     <div class="container">
+      <!--  This goes to the nav bar
       <div class="row navigation">
         <div class="col-md-2 logo">Logo</div>
         <div class="col-md-6 blank">Blank</div>
         <div class="col-md-4 about">About</div>
       </div>
+      -->
       <div class="row heading">
         <div class="col-md-12">
-          <h1>Bitstarter Title</h1>
+          <h1>Product</h1>
         </div>
       </div>
       <div class="row subheading">
         <div class="col-md-12">
-          <p class="lead">This is my first bitstarter project</p>
+          <p class="lead">One sentence description.</p>
         </div>
       </div>
       <div class="row pitch">
         <div class="col-md-6">
-          <div class="video">Video</div>
+          <div class="video"><img src="http://placehold.it/480x300" alt="Video"></div>
         </div>
         <div class="col-md-6">
           <div class="thermometer">Thermometer</div>
@@ -85,18 +114,39 @@
         </div>
       </div>
       <div class="row section1">
-        <div class="col-md-12">Marketing Section 1</div>
+        <div class="col-md-6"><img src="http://placehold.it/480x300" alt="Image"></div>
+        <div class="col-md-6">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.
+          </p>
+        </div>
       </div>
       <div class="row section2">
-        <div class="col-md-12">Marketing Section 2</div>
+        <div class="col-md-6">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.
+          </p>
+        </div>
+        <div class="col-md-6"><img src="http://placehold.it/480x300" alt="Image"></div>
       </div>
       <div class="row faq">
         <div class="col-md-12">FAQ</div>
       </div>
       <div class="row footer">
-        <div class="col-md-12">Footer</div>
+        <div class="col-md-12">
+          <p>
+            This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC By-SA 3.0</a> , without all the cruft that would otherwise be put at the bottom of the page.
+          </p>
+        </div>
       </div>
     </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
   </body>
 </html>
 
