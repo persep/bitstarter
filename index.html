@@ -28,49 +28,64 @@
       body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
+
       .heading, .subheading {
         font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
         text-align: center;
       }
 
       p.lead {
-        padding-top: 15px;
+        /*Targets only <p> elements whose class attribute has a value of lead*/
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
+      }
+/*
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+*/
+      .pitch {
+        padding: 2.5% 0%;
       }
 
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-        padding: 10px 0px 10px 0px;
-      }
-
-      .video, .thermometer, .order, .social {
-
-      }
-      
-      .video {
-  
-      }
-      
-      .thermometer, .order, .social {
-
+      .thermometer, .order, .social, .statistics {
+        text-align: center;
       }
 
       .actions {
 
       }
 
-      .copy {
-
-      }
-
-      .copy-right {
-
+      .copy { /* copy = text the 2 columns of text
+        add padding top-bottom 2.5%*/
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
       }
 
       .asset {
-
-      }
+        /* the 2 images with text to the right 
+        add padding top-bottom 2.5% left-right 0% */
+        padding: 2.5% 0%;
+      } 
 
       .footer {
+        color: #cccccc;
+        text-align: center;
+      }
 
+      /* Targets any  <p> elements that
+      sit inside a  class=footer, even if
+      there are other elements nested
+      between them */
+      .footer p {
+        font-size: 11px;
+      }
+
+      .footer a{
+        color: #ccccff;
       }
 
     </style>
@@ -101,7 +116,7 @@
         </div><!--/.nav-collapse -->
       </div><!-- /.container -->
     </div><!-- /.navbar -->
-
+          
     <!-- Rows must be placed within a .container for proper alignment and padding. -->
     <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
     <div class="container">    
@@ -112,55 +127,57 @@
           <div class="col-md-12">
             <h1>Product</h1>
           </div>
+      </div>
+      <div class="row subheading"> <!-- Row #2 -->
+        <div class="col-md-12">
+          <!-- Special typography from Bootstrap for lead paragraph. -->
+          <!-- http://getbootstrap.com/css/#type -->
+          <p class="lead">One sentence description.</p>
         </div>
-        <div class="row subheading"> <!-- Row #2 -->
-          <div class="col-md-12">
-            <!-- Special typography from Bootstrap for lead paragraph. -->
-            <!-- http://getbootstrap.com/css/#type -->
-            <p class="lead">One sentence description.</p>
-          </div>
-        </div>
-        <div class="row pitch"> <!-- Row #3 -->
-          <div class="col-md-5 col-md-offset-1 video"> <!-- moves the column one column to the right -->
-            <!-- 1 offset 5 col 5 col -->
-            <img src="http://placehold.it/480x300" class="img-thumbnail" alt="Video">
-          </div>
-
-          <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-          <div class="col-md-5 actions">
-            <div class="thermometer">Thermometer</div>
-            <div class="order">Order</div>
-            <div class="social">Social</div>
-          </div>
+      </div>
+      <div class="row pitch"> <!-- Row #3 -->
+        <div class="col-md-5 col-md-offset-1"> <!-- moves the column one column to the right -->
+          <!-- 1 offset 5 col 5 col -->
+          <img src="http://placehold.it/480x300" class="img-thumbnail" alt="Video">
         </div>
 
-        <!-- Beyond this part the marketing copy begins. -->
+        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+        <div class="col-md-5 actions">
+          <div class="thermometer">Thermometer</div>
+          <div class="order">Order</div>
+          <div class="social">Social</div>
+        </div>
+      </div>
+
+      <!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
       <!-- http://getbootstrap.com/css/#images -->
       <!-- http://placehold.it -->
-        <div class="row section1"> <!-- Row #4 -->
-          <div class="col-md-5 col-md-offset-1 asset">
-            <!-- 1 offset 5 col 5 col -->
-            <img src="http://placehold.it/480x300" class="img-thumbnail" alt="Image"></div>
+      <div class="row"> <!-- Row #4 -->
+        <div class="col-md-5 col-md-offset-1 asset">
+          <!-- 1 offset 5 col 5 col -->
+          <img src="http://placehold.it/480x300" class="img-thumbnail" alt="Image"></div>
           <div class="col-md-5 copy">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.
             </p>
           </div>
+      </div>
+      <div class="row"> <!-- Row #5 -->
+        <div class="col-md-5 col-md-offset-1 copy">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.
+          </p>
         </div>
-        <div class="row section2"> <!-- Row #5 -->
-          <div class="col-md-5 col-md-offset-1 copy copy-right">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.
-            </p>
-          </div>
-          <div class="col-md-5 asset"><img src="http://placehold.it/480x300" class="img-thumbnail" alt="Image"></div>
+        <div class="col-md-5 asset">
+          <img src="http://placehold.it/480x300" class="img-thumbnail" alt="Image">
         </div>
+      </div>
 
         <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
         <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
         <!-- http://getbootstrap.com/javascript/#collapse -->
-        <div class="row faq"> <!-- Row #6 -->
+        <div class="row"> <!-- Row #6 -->
           <div class="col-md-10 col-md-offset-1">
             <h3>FAQ</h3>
             <div class="panel-group" id="accordion"> <!-- panel-group -->
@@ -204,7 +221,7 @@
             </p>
           </div>
         </div>
-
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
