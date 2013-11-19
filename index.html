@@ -23,10 +23,8 @@
 
     <style type="text/css">
       /* Large desktop */
-      @media (min-width: 980px) { 
-        body {
-         padding-top: 60px;
-        }
+      body {
+        padding-top: 60px;
       }
 
       body{
@@ -48,7 +46,7 @@
       p {
         /*font-size: 18px;
         line-height: 24px;*/
-        margin-top: 10px;
+        margin-top: 6px;
       }
 
       .pitch {
@@ -59,14 +57,23 @@
         text-align: center;
       }
 
+      .statistics {
+        background-color: #343434;
+        padding-bottom: 4px;
+        margin-top: 0;
+      }
+
       .order {
         padding: 2% 0%;
       }
 
       .actions {
-        background-color: #343434;
-        padding: 1.75% 0%;
+        /*background-color: #343434;*/
+        /*padding: 1.75% 0%;*/
+        /*padding-top: 1.75%;*/
+        padding-bottom: 1.75%;
         /*padding-bottom: 2%;*/
+
       }
 
       .statistics h3, .statistics p {
@@ -75,16 +82,26 @@
 
       .copy { /* copy = text the 2 columns of text
         add padding top-bottom 2.5%*/
-        /*padding-top: 2.5%;
-        padding-bottom: 2.5%;*/
+        /*padding-top: 2.5%;*/
+        /*padding-bottom: 2.5%;*/
+
         text-align: justify;
       }
+
+      .copy2 { /* copy = text the 2 columns of text
+        add padding top-bottom 2.5%*/
+        /*padding-top: 2.5%;*/
+        /*padding-bottom: 2.5%;*/
+
+        text-align: justify;
+      }
+
 
       .asset {
         /* the 2 images with text to the right 
         add padding top-bottom 2.5% left-right 0% */
         /*padding: 2.5% 0%;*/
-        margin-top: 10px;
+        margin-top: 6px;
       } 
 
       .footer {
@@ -117,9 +134,11 @@
        }
 
        .zerobottom {
-        margin-bottom: 2%;
+        margin-bottom: 3%;
+        margin-top: 2%;
        }
       
+
 
     </style>
 
@@ -178,7 +197,7 @@
         <div class="col-md-5 actions">
           <div class="row">
             <!-- Content should be placed within columns, and only columns may be immediate children of rows. -->
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-12">
               <div class="statistics">
                 
                 <div class="row"> <!-- #backers, money,days left -->
@@ -205,7 +224,7 @@
                 </div>
                 
                 <div class="row"> <!-- progress bar -->
-                  <div class="col-md-12">
+                  <div class="col-md-10 col-md-offset-1">
                     
                     <!-- http://getbootstrap.com/components/#progress-stacked -->
                     <div class="progress zerobottom">
@@ -227,7 +246,7 @@
                 </div>
 
                 <div class="row"> <!-- Social buttons -->
-                  <div class="col-md-12">
+                  <div class="col-md-12 order">
                     <button class="btn btn-twitter"><i class="fa fa-twitter"></i> | Twitter</button>
                     <button class="btn btn-facebook"><i class="fa fa-facebook"></i> | Facebook</button>
                   </div>
@@ -253,7 +272,7 @@
           </div>
       </div>
       <div class="row"> <!-- Row #5 -->
-        <div class="col-md-5 col-md-offset-1 copy">
+        <div class="col-md-5 col-md-offset-1 copy2">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.
           </p>
