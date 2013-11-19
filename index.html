@@ -40,7 +40,7 @@
 
       p.lead {
         /*Targets only <p> elements whose class attribute has a value of lead*/
-        padding-top: 1.5%;
+        /*padding-top: 1.5%;*/
         font-size: 24px;
         line-height: 30px;
       }
@@ -51,28 +51,38 @@
       }
 */
       .pitch {
-        padding: 2.5% 0%;
+        /*padding: 2.5% 0%;*/
       }
 
       .thermometer, .order, .social, .statistics {
         text-align: center;
       }
 
-      .actions {
+      .order {
+        padding: 2% 0%;
+      }
 
+      .actions {
+        background-color: #343434;
+        /*padding: 3% 0%;*/
+        /*padding-bottom: 2%;*/
+      }
+
+      .statistics h3, .statistics p {
+        color: white;
       }
 
       .copy { /* copy = text the 2 columns of text
         add padding top-bottom 2.5%*/
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
+        /*padding-top: 2.5%;
+        padding-bottom: 2.5%;*/
         text-align: justify;
       }
 
       .asset {
         /* the 2 images with text to the right 
         add padding top-bottom 2.5% left-right 0% */
-        padding: 2.5% 0%;
+        /*padding: 2.5% 0%;*/
       } 
 
       .footer {
@@ -91,6 +101,23 @@
       .footer a{
         color: #ccccff;
       }
+
+      .linediv-l {
+         border-right: 1px white solid;
+        }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
+
+       .zeropad {
+        padding-left: 0%;
+        padding-right: 0%;
+       }
+
+       .zerobottom {
+        margin-bottom: 2%;
+       }
+      
 
     </style>
 
@@ -149,11 +176,11 @@
         <div class="col-md-5 actions">
           <div class="row">
             <!-- Content should be placed within columns, and only columns may be immediate children of rows. -->
-            <div class="col-md-8 ">
+            <div class="col-md-8 col-md-offset-2">
               <div class="statistics">
                 
                 <div class="row"> <!-- #backers, money,days left -->
-                  <div class="col-md-4">
+                  <div class="col-md-4 zeropad">
                     <!-- linediv-l and linediv-r give dividing lines that look
                     different in horizontal and vertical layouts, illustrating
                     media queries. -->
@@ -162,13 +189,13 @@
                     </div>
                   </div>
 
-                  <div class="col-md-4">
+                  <div class="col-md-4 zeropad">
                     <div class="linediv-c">
                       <h3>$6000</h3> <p>of $10,000</p>
                     </div>
                   </div>
 
-                  <div class="col-md-4">
+                  <div class="col-md-4 zeropad">
                     <div class="linediv-r">
                       <h3>10</h3> <p>days left</p>
                     </div>
@@ -179,7 +206,7 @@
                   <div class="col-md-12">
                     
                     <!-- http://getbootstrap.com/components/#progress-stacked -->
-                    <div class="progress">
+                    <div class="progress zerobottom">
                       <div class="progress-bar progress-bar-success" style="width: 60%">
                         <span class="sr-only">60% Complete (success)</span>
                       </div>
@@ -192,7 +219,7 @@
 
                 <div class="row"> <!-- preorder button -->
                   <!-- http://getbootstrap.com/css/#buttons-options -->
-                  <div class="col-md-12">
+                  <div class="col-md-12 order">
                     <button type="button" class="btn btn-success btn-lg">Preorder</button>
                   </div>
                 </div>
