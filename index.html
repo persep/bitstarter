@@ -46,7 +46,7 @@
       p {
         /*font-size: 18px;
         line-height: 24px;*/
-        margin-top: 6px;
+        margin-top: 4px;
       }
 
       .pitch {
@@ -101,7 +101,7 @@
         /* the 2 images with text to the right 
         add padding top-bottom 2.5% left-right 0% */
         /*padding: 2.5% 0%;*/
-        margin-top: 6px;
+        margin-top: 4px;
       } 
 
       .footer {
@@ -195,67 +195,62 @@
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="col-md-5 actions">
-          <div class="row">
-            <!-- Content should be placed within columns, and only columns may be immediate children of rows. -->
-            <div class="col-md-12">
-              <div class="statistics">
-                
-                <div class="row"> <!-- #backers, money,days left -->
-                  <div class="col-md-4 zeropad">
-                    <!-- linediv-l and linediv-r give dividing lines that look
-                    different in horizontal and vertical layouts, illustrating
-                    media queries. -->
-                    <div class="linediv-l">
-                      <h3>1000</h3> <p>backers</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-4 zeropad">
-                    <div class="linediv-c">
-                      <h3>$6000</h3> <p>of $10,000</p>
-                    </div>
-                  </div>
-
-                  <div class="col-md-4 zeropad">
-                    <div class="linediv-r">
-                      <h3>10</h3> <p>days left</p>
-                    </div>
-                  </div>
+          <!-- Content should be placed within columns, and only columns may be immediate children of rows. -->
+          <div class="statistics">
+            <div class="row"> <!-- #backers, money,days left -->
+              <div class="col-md-4 zeropad">
+                <!-- linediv-l and linediv-r give dividing lines that look
+                  different in horizontal and vertical layouts, illustrating
+                  media queries. -->
+                <div class="linediv-l">
+                  <h3>1000</h3> <p>backers</p>
                 </div>
-                
-                <div class="row"> <!-- progress bar -->
-                  <div class="col-md-10 col-md-offset-1">
-                    
-                    <!-- http://getbootstrap.com/components/#progress-stacked -->
-                    <div class="progress zerobottom">
-                      <div class="progress-bar progress-bar-success" style="width: 60%">
-                        <span class="sr-only">60% Complete (success)</span>
-                      </div>
-                      <div class="progress-bar progress-bar-warning" style="width: 40%">
-                        <span class="sr-only">40% Complete (warning)</span>
-                      </div>
-                    </div>                  
-                  </div>
-                </div>
+              </div>                  
 
-                <div class="row"> <!-- preorder button -->
-                  <!-- http://getbootstrap.com/css/#buttons-options -->
-                  <div class="col-md-12 order">
-                    <button type="button" class="btn btn-success btn-lg">Preorder</button>
-                  </div>
+              <div class="col-md-4 zeropad">
+                <div class="linediv-c">
+                  <h3>$6000</h3> <p>of $10,000</p>
                 </div>
+              </div>
 
-                <div class="row"> <!-- Social buttons -->
-                  <div class="col-md-12 order">
-                    <button class="btn btn-twitter"><i class="fa fa-twitter"></i> | Twitter</button>
-                    <button class="btn btn-facebook"><i class="fa fa-facebook"></i> | Facebook</button>
-                  </div>
+              <div class="col-md-4 zeropad">
+                <div class="linediv-r">
+                  <h3>10</h3> <p>days left</p>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+            
+            <div class="row"> <!-- progress bar -->
+              <div class="col-md-10 col-md-offset-1">
+                
+                <!-- http://getbootstrap.com/components/#progress-stacked -->
+                <div class="progress zerobottom">
+                  <div class="progress-bar progress-bar-success" style="width: 60%">
+                    <span class="sr-only">60% Complete (success)</span>
+                  </div>
+                  <div class="progress-bar progress-bar-warning" style="width: 40%">
+                    <span class="sr-only">40% Complete (warning)</span>
+                  </div>
+                </div>                  
+              </div>
+            </div>
+
+            <div class="row"> <!-- preorder button -->
+              <!-- http://getbootstrap.com/css/#buttons-options -->
+              <div class="col-md-12 order">
+                <button type="button" class="btn btn-success btn-lg">Preorder</button>
+              </div>
+            </div>
+
+            <div class="row"> <!-- Social buttons -->
+              <div class="col-md-12 order">
+                <button class="btn btn-twitter"><i class="fa fa-twitter"></i> | Twitter</button>
+                <button class="btn btn-facebook"><i class="fa fa-facebook"></i> | Facebook</button>
+              </div>
+            </div>
+          </div> <!-- ./statistics -->              
+        </div> <!-- /col .actions -->
+      </div> <!-- ./row pitch -->
 
       <!-- Beyond this part the marketing copy begins. -->
       <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
