@@ -43,7 +43,7 @@
       }
 
       p {
-        margin-top: 4px;
+
       }
 
       .pitch {
@@ -64,7 +64,8 @@
         padding: 2% 0%;
       }
 
-      .actions {
+      .actions, .asset{
+        margin-top: 1.75%;
         margin-bottom: 1.75%;
       }
 
@@ -73,13 +74,9 @@
       }
 
       .copy { /* copy = copywrite*/
-
+        margin-top: 1.75%;
         text-align: justify;
       }
-
-      .asset {
-        margin-top: 4px;
-      } 
 
       .footer {
         color: #cccccc;
@@ -98,28 +95,33 @@
         color: #ccccff;
       }
 
-      .linediv-l {
-         border-right: 1px white solid;
+      @media (min-width: 992px) {  /* For medium desktops >992px */
+        .linediv-l {
+           border-right: 1px white solid;
+        }
+
+        .linediv-r {
+          border-left: 1px white solid;
+        }
       }
 
-      .linediv-r {
-        border-left: 1px white solid;
+     @media (max-width: 768px) {  /* For xsmall devices <768px*/
+       .linediv-l {
+         border-bottom: 1px white solid;
+       }
+       .linediv-r {
+         border-top: 1px white solid;
+       }
       }
 
-       .backers, .raised, .days {
-        padding-left: 0%;
-        padding-right: 0%;
-       }
+     .backers, .raised, .days {
+      padding-left: 0%;
+      padding-right: 0%;
+     }
 
-       .statsprogress {
-        margin-bottom: 3%;
-        margin-top: 2%;
-       }
-
-       .progresscol {
-        padding-left: 0;
-        padding-right: 0;
-       }  
+     .statsprogress {
+      margin: 2% 2% 2% 3%;     
+     }
 
     </style>
 
@@ -169,9 +171,10 @@
         </div>
       </div>
       <div class="row pitch"> <!-- Row #3 -->
-        <div class="col-md-5 col-md-offset-1"> <!-- moves the column one column to the right -->
+        <div class="col-md-5 col-md-offset-1 asset"> <!-- moves the column one column to the right -->
           <!-- 1 offset 5 col 5 col -->
-          <img src="http://placehold.it/480x300" class="img-thumbnail" alt="Video">
+          <!-- http://getbootstrap.com/css/#images -->
+          <img src="http://placehold.it/440x235" class="img-thumbnail" alt="Video">
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
@@ -189,9 +192,7 @@
               </div>                  
 
               <div class="col-md-4 raised">
-                <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
-                </div>
+                <h3>$6000</h3> <p>of $10,000</p>
               </div>
 
               <div class="col-md-4 days">
@@ -202,7 +203,7 @@
             </div>
             
             <div class="row"> <!-- progress bar -->
-              <div class="col-md-10 col-md-offset-1 progresscol">
+              <div class="col-md-10 col-md-offset-1">
                 
                 <!-- http://getbootstrap.com/components/#progress-stacked -->
                 <div class="progress statsprogress">
@@ -224,6 +225,7 @@
             </div>
 
             <div class="row"> <!-- Social buttons -->
+              <!-- http://noizwaves.github.io/bootstrap-social-buttons/ -->
               <div class="col-md-12 order">
                 <button class="btn btn-twitter"><i class="fa fa-twitter"></i> | Twitter</button>
                 <button class="btn btn-facebook"><i class="fa fa-facebook"></i> | Facebook</button>
@@ -240,7 +242,7 @@
       <div class="row"> <!-- Row #4 -->
         <div class="col-md-5 col-md-offset-1 asset">
           <!-- 1 offset 5 col 5 col -->
-          <img src="http://placehold.it/480x300" class="img-thumbnail" alt="Image"></div>
+          <img src="http://placehold.it/440x235" class="img-thumbnail" alt="Image"></div>
           <div class="col-md-5 copy">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.
@@ -254,7 +256,7 @@
           </p>
         </div>
         <div class="col-md-5 asset">
-          <img src="http://placehold.it/480x300" class="img-thumbnail" alt="Image">
+          <img src="http://placehold.it/440x235" class="img-thumbnail" alt="Image">
         </div>
       </div>
 
