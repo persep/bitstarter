@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- To ensure proper rendering and touch zooming -->
-    <title>My First Bitstarter</title>
+    <title>Parking Maps</title>
 
     <!-- Bootstrap -->
     <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +43,7 @@
       }
 
       p {
-
+        font-size: 1.2em;
       }
 
       .pitch {
@@ -123,6 +123,13 @@
       margin: 2% 2% 2% 3%;     
      }
 
+     em {
+      font-size: 1.3em;
+      font-weight: normal;
+      font-style: normal;
+      font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+     }
+
     </style>
 
   </head>
@@ -160,21 +167,24 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row heading"> <!-- Row #1 -->
           <div class="col-md-12">
-            <h1>Product</h1>
+            <h1>Parking Maps</h1>
           </div>
       </div>
       <div class="row subheading"> <!-- Row #2 -->
         <div class="col-md-12">
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://getbootstrap.com/css/#type -->
-          <p class="lead">One sentence description.</p>
+          <p class="lead">Always know where to park.</p>
         </div>
       </div>
       <div class="row pitch"> <!-- Row #3 -->
         <div class="col-md-5 col-md-offset-1 asset"> <!-- moves the column one column to the right -->
           <!-- 1 offset 5 col 5 col -->
           <!-- http://getbootstrap.com/css/#images -->
-          <img src="http://placehold.it/440x235" class="img-thumbnail" alt="Video">
+          <!-- <img src="http://placehold.it/440x235" class="img-thumbnail" alt="Video"> -->
+          <!-- <img src="http://maps.googleapis.com/maps/api/staticmap?center=Benidorm,Spain&zoom=15&size=440x245&maptype=roadmap&sensor=false&" alt="Map"> -->
+          <img src="img/staticmap1.png" class="img-responsive" alt="Map">
+          
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
@@ -226,7 +236,7 @@
 
             <div class="row"> <!-- Social buttons -->
               <!-- http://noizwaves.github.io/bootstrap-social-buttons/ -->
-              <div class="col-md-12 order">
+              <div class="col-md-12 order"  id="about">
                 <button class="btn btn-twitter"><i class="fa fa-twitter"></i> | Twitter</button>
                 <button class="btn btn-facebook"><i class="fa fa-facebook"></i> | Facebook</button>
               </div>
@@ -242,21 +252,28 @@
       <div class="row"> <!-- Row #4 -->
         <div class="col-md-5 col-md-offset-1 asset">
           <!-- 1 offset 5 col 5 col -->
-          <img src="http://placehold.it/440x235" class="img-thumbnail" alt="Image"></div>
-          <div class="col-md-5 copy">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.
-            </p>
-          </div>
+          <!-- <img src="http://placehold.it/440x235" class="img-thumbnail" alt="Image"> -->
+          <!-- <img src="http://maps.googleapis.com/maps/api/staticmap?center=38.538952,-0.116129&zoom=16&size=440x235&maptype=roadmap&sensor=false&" alt="Map"> -->
+          <img src="img/staticmap2.png" class="img-responsive" alt="Map2">
+        </div>
+
+        <div class="col-md-5 copy">
+          <p>Tired of looking for somewhere to park your car? Then <em>Parking Maps</em> is what you need.</p>
+          <p>Find where you can park: free zone, pay zone or private parking and where you can't</p>
+          <p>The main advange of <em>Parking Maps</em> is to save time. Avoid going into streets where you can't park or ares whwre you have to pay for parking and you don't wan't to.</p>
+          <p> And with time you save on petrol and on CO2 emissions. You help make Earth a greener place. We all win.</p>
+        </div>
       </div>
       <div class="row"> <!-- Row #5 -->
         <div class="col-md-5 col-md-offset-1 copy">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla ante lectus, a pellentesque lacus dignissim ac. Sed volutpat lorem ut congue malesuada. In facilisis scelerisque turpis sed lacinia. Donec in orci lectus. Donec auctor semper quam, eget rhoncus purus fringilla id. Phasellus id nibh eu risus ultrices adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu mollis justo velit at nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
+          <p>Access <em>Parking Maps</em> with your computer or mobile device.</p>
+          <p>Use your mobile to get you position via gps and inmediately see where you can park and what type of parking it is.</p>
+          <p>With color legends you can see where you can park and what type it is.</p>
         </div>
         <div class="col-md-5 asset">
-          <img src="http://placehold.it/440x235" class="img-thumbnail" alt="Image">
+          <!-- <img src="http://placehold.it/440x235" class="img-thumbnail" alt="Image"> -->
+          <!-- <img src="http://maps.googleapis.com/maps/api/staticmap?center=38.535889,-0.104756&zoom=17&size=440x235&maptype=roadmap&sensor=false&" alt="Map"> -->
+          <img src="img/staticmap3.png" class="img-responsive" alt="Map3">          
         </div>
       </div>
 
@@ -271,13 +288,13 @@
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                      What does FAQ stand for?
+                      What is Parking Maps for?
                     </a>
                   </h4>
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse">
                   <div class="panel-body">
-                    Frequently Asked Question.
+                    A map layer to know where you can park, free or paying zones.
                   </div>
                 </div>
               </div> <!-- ./#1 accordion -->
@@ -286,13 +303,28 @@
                 <div class="panel-heading">
                   <h4 class="panel-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                      What's a Frequently Asked Question?
+                      Is it mobile friendly?
                     </a>
                   </h4>
                 </div>
                 <div id="collapseTwo" class="panel-collapse collapse">
                   <div class="panel-body">
-                    A question which is commonly asked by users.
+                    Yes. It is design to work in the desktop and in mobile devices.
+                  </div>
+                </div>
+              </div> <!-- ./#2 accordion -->
+
+              <div class="panel panel-default"> <!-- #2 accordion -->
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                      Will I be able to know the different types of parking spaces?
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    Yes. Each kind of parking space will have a different color.
                   </div>
                 </div>
               </div> <!-- ./#2 accordion -->         
