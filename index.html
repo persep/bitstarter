@@ -60,7 +60,7 @@
         margin-top: 0;
       }
 
-      .order {
+      .social {
         padding: 2% 0%;
       }
 
@@ -129,7 +129,11 @@
       font-style: normal;
       font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
      }
-
+	  /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+	div.addthis_toolbox {
+		width:180px;
+		margin: 0 auto;
+	}
     </style>
 
   </head>
@@ -236,7 +240,7 @@
 
             <div class="row"> <!-- Social buttons -->
               <!-- http://noizwaves.github.io/bootstrap-social-buttons/ -->
-              <div class="col-md-12 order social"  id="about">
+              <div class="col-md-12 social" id="about">
 				<!-- AddThis Button BEGIN -->
 				<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
 					<a class="addthis_button_preferred_1"></a>
